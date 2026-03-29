@@ -26,4 +26,4 @@ left join stg_traffic t
 left join stg_ad_spend a
     on s.date = a.date
    and s.client_id = a.client_id
-   and
+   and s.asin = a.asin;
