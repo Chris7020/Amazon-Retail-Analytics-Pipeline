@@ -1,0 +1,21 @@
+create table analytics.fct_daily_asin_performance (
+    date date,
+    client_id varchar(50),
+    client_name varchar(255),
+    channel_type varchar(100),
+    asin varchar(50),
+    product_name varchar(255),
+    category varchar(255),
+    ordered_units integer,
+    ordered_revenue numeric(18,2),
+    shipped_units integer,
+    shipped_revenue numeric(18,2),
+    glance_views integer,
+    sessions integer,
+    spend numeric(18,2),
+    clicks integer,
+    impressions integer,
+    conversion_rate numeric(18,6),
+    roas numeric(18,6),
+    cpc numeric(18,6)
+);
