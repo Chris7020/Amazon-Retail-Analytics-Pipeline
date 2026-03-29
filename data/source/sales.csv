@@ -1,0 +1,5 @@
+date,client_id,client_name,channel_type,asin,product_name,category,ordered_units,ordered_revenue,shipped_units,shipped_revenue
+2026-01-01,1001,Acme Health,Vendor,B001,Vitamin C Serum,Beauty,12,240.00,10,200.00
+2026-01-01,1001,Acme Health,Vendor,B002,Hydrating Cleanser,Beauty,8,176.00,7,154.00
+2026-01-02,1001,Acme Health,Vendor,B001,Vitamin C Serum,Beauty,15,300.00,14,280.00
+2026-01-02,1002,NorthPeak Foods,Vendor,B003,Protein Bars,Grocery,5,125.00,5,125.00
