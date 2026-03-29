@@ -1,0 +1,13 @@
+project_name: amazon-retail-analytics-pipeline
+source_path: data/source
+raw_path: data/raw
+staged_path: data/staged
+curated_path: data/curated
+required_source_files:
+  - sales.csv
+  - traffic.csv
+  - ad_spend.csv
+business_keys:
+  - date
+  - client_id
+  - asin
