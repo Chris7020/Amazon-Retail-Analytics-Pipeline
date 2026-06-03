@@ -1,13 +1,50 @@
 project_name: amazon-retail-analytics-pipeline
+
 source_path: data/source
-raw_path: data/raw
+raw_path:    data/raw
 staged_path: data/staged
 curated_path: data/curated
+
 required_source_files:
   - sales.csv
   - traffic.csv
   - ad_spend.csv
+
 business_keys:
   - date
   - client_id
   - asin
+
+# Maximum age (days) for the most-recent record before the freshness check fails
+freshness_max_age_days: 90
+
+# Expected columns for each source file — used for schema validation at ingestion
+schemas:
+  sales.csv:
+    required_columns:
+      - date
+      - client_id
+      - client_name
+      - channel_type
+      - asin
+      - product_name
+      - category
+      - ordered_units
+      - ordered_revenue
+      - shipped_units
+      - shipped_revenue
+  traffic.csv:
+    required_columns:
+      - date
+      - client_id
+      - asin
+      - glance_views
+      - sessions
+  ad_spend.csv:
+    required_columns:
+      - date
+      - client_id
+      - asin
+      - spend
+      - clicks
+      - impressions
